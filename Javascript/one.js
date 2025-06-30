@@ -46,7 +46,32 @@ let str3 = str1 + str2
 const Name = "arpan"
 const account = 50 
 
-console.log( ` hello my name is ${Name} and my account value is ${account}:`);
+// console.log( ` hello my name is ${Name} and my account value is ${account}:`) // this new key is backtick use in the code   
+
+const gameName = new String("arpan")
+// console.log(gameName[1]);// songle value are check only one word
+
+// console.log(gameName.__proto__);
+// console.log(gameName.length);
+// console.log(gameName.toLocaleLowerCase());
+// console.log(gameName.toLocaleUpperCase());
+//  console.log(gameName.indexOf('a'));//this case is position definde
+// const newString = gameName.substring(0,5)
+// console.log(newString);
+
+const anotherString = gameName.slice(0,5)// this is slice key is used in start word to end word are show
+ console.log(anotherString) ;
+
+// console.log(anotherString.trim()) // trim method is use is removed the element 
+
+// const url="http://Arpan%20kochale.com"
+// console.log(url.replace('%20','_')); // this %20 is a tow word are space 
+
+// console.log(url.includes("Arpan")); //this includes methods are check the text in the word
+
+
+
+// ----------------------Number and maths -------------------------------
 
 
 
