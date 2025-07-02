@@ -42,7 +42,7 @@ let str3 = str1 + str2
 // tow type memory is : STACK AND HEAP 
 
 
-// --------- string in java script ---------
+// ---------------- string in java script---------- ---------
 const Name = "arpan"
 const account = 50 
 
@@ -118,25 +118,68 @@ let myDate = new Date()
 
 // console.log(myDate.toTimeString());
 
-console.log(myDate.getMonth()+1);
-console.log(myDate.getDay());
+// console.log(myDate.getMonth()+1);
+// console.log(myDate.getDay());
+// console.log(myDate.toLocaleString('default',{
+   
+//     month:"numeric",
+//     day:"numeric",
+//     year:"numeric",
+//     time:"numeric"
+// }));
 
-
-
-
-
-
-
-
-
-
-// ++++++++++ Non primitive +++++++++++
+//++++++++++++++++++++++ Non primitive +++++++++++++++++++++++++
 // Array , object , function
 
 // ----Array-----
  
-const arr1 = [1,2,4,5,3]
+// const arr1 = [1,2,4,5,3]
 // console.log(arr1);
+const Myfevcar = ["volvo", "Verna", "Thar"]
+// console.log(Myfevcar[1]);
+// console.log(Myfevcar.push());
+// console.log(Myfevcar);
+// Myfevcar.push();
+
+
+// console.log(Myfevcar.pop());
+// console.log(Myfevcar);
+// Myfevcar.pop();
+
+// console.log(Myfevcar);
+
+// const count = Myfevcar.push("enova")
+// console.log(count); // this count is array count thats it 
+
+// console.log(Myfevcar);
+
+//  const count = Myfevcar.push("sweft","aoura","mustang")
+//  console.log(count);
+ 
+// console.log(Myfevcar);
+
+
+
+const arr1 = [1,2,4,5,3]
+console.log(arr1);
+console.log(arr1.unshift(3));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
