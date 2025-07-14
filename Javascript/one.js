@@ -8,7 +8,7 @@ accountCity ="indore"
 
 // -----data type------
 // number
-// bigInt (big data
+// bigInt (big data)
 // string 
 // boolean(0,1) (true or false)
 // null 
@@ -32,6 +32,7 @@ let BooleanIslogedIn = Boolean(IslogedIn)
 
 // +,-,*,/,(**), % and assignment oprator 
 // string addition 
+// (**) => this is duble star is bigint multiple vlaue in calculate 
 
 let str1 = "arpan"
 let str2 = "kochale"
@@ -160,9 +161,146 @@ const Myfevcar = ["volvo", "Verna", "Thar"]
 
 
 
+// const arr1 = [1,2,4,5,3]
+// console.log(arr1);
+// console.log(arr1.unshift(6,7,8));
+// console.log(arr1);
+// console.log(arr1.pop(3));
 const arr1 = [1,2,4,5,3]
-console.log(arr1);
-console.log(arr1.unshift(3));
+// console.log(arr1);
+// const firstelement = arr1.shift()
+// console.log(arr1);
+// console.log(firstelement);
+
+// console.log(arr1.slice(1,4));
+// console.log(arr1);
+
+// console.log(arr1.splice());
+// const str= [ 'rahul', 'abhishek' ,'krishna' ]
+
+// console.log(str.indexOf( "arpan",5));
+// console.log(str.push("arpan"));
+// console.log(str.pop(2));
+// console.log(str);
+
+// console.log(arr1);
+// console.log(arr1.shift().push()) ;
+// console.log(arr1);
+
+// console.log(str.includes("rahul"));// include methods are use is type boolen true or false
+
+// --------------------------- Array Object -------------------------------------
+
+// singalton/constructer 
+// const obj = {
+//     "fullName":"Arpan Kochale",
+//     Age:20,
+    
+// }
+// console.log(obj["fullName"]);
+// console.log(obj["Name"]);
+
+
+// const obj = {
+//     myNum:  1,
+//     propertyIsEnumberable(){
+//         return  false;
+
+//     },    
+// };
+//  obj.propertyIsEnumberable("myNum")
+//  Object.prototype.propertyIsEnumerable.call(obj,"myNum");
+//  console.log(obj.propertyIsEnumberable.call(obj,"myNum"));
+ 
+// ----singleton/ constructor---------
+// function is used  
+// const tinderUser ={
+//     name : "arpan",
+//     age : 20
+// }
+// console.log(tinderUser);
+
+// const regularUser ={
+//     email:"arpan@gmail.com",
+//     fullname:{
+//         userfullname:{
+//             firstname: "arpan",
+// //             lastname: "Kochale"
+//         }
+//     }
+// } 
+// console.log(regularUser.fullname.userfullname.lastname);
+
+//combine with object 
+
+// const obj1 ={1:"a",2:"b"}
+// const obj2 ={3:"a",4:"b"}
+// const obj3 = Object.assign({},obj1,obj2)
+// console.log(obj3);
+
+// const obj = Object.create(null);
+// const obj2= {__proto__: null};
+// console.log(obj);
+
+const normalobj = {};// create the normal object 
+const nullprotoobj = Object.create(null);// create an object prototype "null"
+
+console.log(`normalobj is : ${normalobj}`);//print thr normal object 
+console.log(`nullprotoobj is : ${nullprotoobj}`);// thorw the error 
+
+// other methods are fail as well ------------------------------------
+normalobj.valueof();
+nullprotoobj.valueof();
+
+normalobj.hasOwnProperty("A");
+nullprotoobj.hasOwnProperty("A");
+// console.log(normalobj.hasOwnProperty("A"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// -> concat 
+// ->spread(.....)
+
+
+// ------------oops concept----------------------------------
+// inheritance
+
+// class Student extends person{
+// constructor(name , age , StudentId) {
+//     super(name , age)
+//     this.StudentId = StudentId;
+// }
+// getDetails(){
+//     return  `Student: ${ super.getDetails()} (ID: ${this.StudentId})`;
+// }
+// } 
+
+// class Teacher extends person{
+// constructor(name , age , Subject) {
+//     super(name , age)
+//     this.Subject = Subject;
+// }
+// getDetails(){
+//     return  `Teacher: ${ super.getDetails()} (Subject: ${this.Subject})`;
+// }
+// } 
+
+
+
+
+
 
 
 
