@@ -1,9 +1,9 @@
 // console.log("Arpan") 
 // +++++++ start basic++++++++++
 const accountId = 1221
- let email = "arpan@gmail.com"
-var accountpassword="2222"
-accountCity ="indore"
+let email = "arpan@gmail.com"
+var accountpassword = "2222"
+accountCity = "indore"
 // console.log(accountCity)
 
 // -----data type------
@@ -45,7 +45,7 @@ let str3 = str1 + str2
 
 // ---------------- string in java script---------- ---------
 const Name = "arpan"
-const account = 50 
+const account = 50
 
 // console.log( ` hello my name is ${Name} and my account value is ${account}:`) // this new key is backtick use in the code   
 
@@ -60,8 +60,8 @@ const gameName = new String("arpan")
 // const newString = gameName.substring(0,5)
 // console.log(newString);
 
-const anotherString = gameName.slice(0,5)// this is slice key is used in start word to end word are show
- console.log(anotherString) ;
+const anotherString = gameName.slice(0, 5)// this is slice key is used in start word to end word are show
+console.log(anotherString);
 
 // console.log(anotherString.trim()) // trim method is use is removed the element 
 
@@ -76,7 +76,7 @@ const anotherString = gameName.slice(0,5)// this is slice key is used in start w
 
 const score = 400
 // console.log(score);// this is  normal defind the number 
-const balance =  new Number(200)
+const balance = new Number(200)
 // console.log(balance)// this type is difrent is in normal type 
 
 // console.log("this is the string value:",balance.toString());// this type is convert the  number in string  
@@ -122,7 +122,7 @@ let myDate = new Date()
 // console.log(myDate.getMonth()+1);
 // console.log(myDate.getDay());
 // console.log(myDate.toLocaleString('default',{
-   
+
 //     month:"numeric",
 //     day:"numeric",
 //     year:"numeric",
@@ -133,7 +133,7 @@ let myDate = new Date()
 // Array , object , function
 
 // ----Array-----
- 
+
 // const arr1 = [1,2,4,5,3]
 // console.log(arr1);
 const Myfevcar = ["volvo", "Verna", "Thar"]
@@ -156,7 +156,7 @@ const Myfevcar = ["volvo", "Verna", "Thar"]
 
 //  const count = Myfevcar.push("sweft","aoura","mustang")
 //  console.log(count);
- 
+
 // console.log(Myfevcar);
 
 
@@ -166,7 +166,7 @@ const Myfevcar = ["volvo", "Verna", "Thar"]
 // console.log(arr1.unshift(6,7,8));
 // console.log(arr1);
 // console.log(arr1.pop(3));
-const arr1 = [1,2,4,5,3]
+const arr1 = [1, 2, 4, 5, 3]
 // console.log(arr1);
 // const firstelement = arr1.shift()
 // console.log(arr1);
@@ -195,7 +195,7 @@ const arr1 = [1,2,4,5,3]
 // const obj = {
 //     "fullName":"Arpan Kochale",
 //     Age:20,
-    
+
 // }
 // console.log(obj["fullName"]);
 // console.log(obj["Name"]);
@@ -211,7 +211,7 @@ const arr1 = [1,2,4,5,3]
 //  obj.propertyIsEnumberable("myNum")
 //  Object.prototype.propertyIsEnumerable.call(obj,"myNum");
 //  console.log(obj.propertyIsEnumberable.call(obj,"myNum"));
- 
+
 // ----singleton/ constructor---------
 // function is used  
 // const tinderUser ={
@@ -245,26 +245,58 @@ const arr1 = [1,2,4,5,3]
 const normalobj = {};// create the normal object 
 const nullprotoobj = Object.create(null);// create an object prototype "null"
 
-console.log(`normalobj is : ${normalobj}`);//print thr normal object 
-console.log(`nullprotoobj is : ${nullprotoobj}`);// thorw the error 
+// console.log(`normalobj is : ${normalobj}`);//print thr normal object 
+// console.log(`nullprotoobj is : ${nullprotoobj}`);// thorw the error 
 
 // other methods are fail as well ------------------------------------
-normalobj.valueof();
-nullprotoobj.valueof();
+// normalobj.valueof();
+// nullprotoobj.valueof();
 
-normalobj.hasOwnProperty("A");
-nullprotoobj.hasOwnProperty("A");
+// normalobj.hasOwnProperty("A");
+// nullprotoobj.hasOwnProperty("A");
 // console.log(normalobj.hasOwnProperty("A"));
 
+// ----------Object de-structure method-------------------
 
+const Cousre = {
+    cousreName: "Java Script",
+    Price: "990",
+    cousreInstructer: "Arpan"
+}
+// console.log(cousre);
+// const{}=Cousre // this is  type of use  the method function 
+const { cousreInstructer } = Cousre // Access the data in function 
+// console.log(cousreInstructer);
 
+// -------------Api And Json ------------------------
+// { }=// this syntex type use in function there are string type of performed 
 
+// function MyName() {
+//     console.log("A");
+//     console.log("R");
+//     console.log("p");
+//     console.log("A");
+//     console.log("N");
+// }
+// MyName();// Exicution the function 
 
+// Write the program Add the Two number in type of function use all opraters
+function AddNum(Num1,Num2){
+// console.log(Num1+Num2);
+// console.log(Num1*Num2);
+// console.log(Num1/Num2);
+// console.log(Num1==Num2);
+// console.log(Num1%Num2);
+// console.log(Num1**Num2);
+// console.log(Num1&Num2);
 
-
-
-
-
+let result = Num1 + Num2
+return result 
+}
+// AddNUm(2,4);
+const result = AddNum(2,5)
+// console.log("Result:", result);
+console.log("Result:", result);
 
 
 
